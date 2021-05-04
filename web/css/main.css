@@ -1,0 +1,119 @@
+/** ***** GENERAL ****** **/
+:root{
+    --gradientNegroTop:linear-gradient(0deg, rgba(35,35,35,1) 0%, rgba(98,98,98,1) 63%);
+    --gradientNegroBottom:linear-gradient(0deg, rgba(98,98,98,1) 0%, rgba(35,35,35,1) 63%);
+    --gradientCeleste:linear-gradient(0deg, rgba(23,111,148,1) 0%, rgba(66,176,206,1) 63%);
+    --negro: #232323;
+    --gris: #626262;
+    --celeste: #42b0ce;
+    --azul:#176f94;
+    --naranja: #d38241;
+    --naranjaOscuro: #8c5528;
+}
+
+html, body{
+    margin:0;
+    padding:0;
+}
+*{
+    box-sizing:border-box;
+    text-decoration:none;
+    font-family:sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+}
+
+/***** BARRA SCROLL *****/
+::-webkit-scrollbar {
+    width: 0.3vw;
+}
+::-webkit-scrollbar-track {
+    background: var(--gris);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--celeste);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--azul);
+}
+
+/** ***** BOTONES ***** **/
+.boton{
+    display: inline-block;
+    font-size: 0.8vmax;
+    padding: 0.3vmax 1vmax;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-transform:uppercase;
+    border:none;
+    cursor:pointer;
+}
+.botonCeleste{
+    color: #FFF;
+    background: var(--celeste);
+}
+.botonCeleste:hover{
+    background: var(--azul);
+}
+.botonNaranja{
+    color: #FFF;
+    background: var(--naranja);
+}
+.botonNaranja:hover{
+    background: var(--naranjaOscuro);
+}
+
+/** ***** HEADER ***** **/
+#header .content{
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+    align-items: center;
+    background: rgb(0,0,0);
+    background: var(--gradientNegroTop);
+    padding:1vmax 3vmax;
+}
+#header .content h1 a{
+    color:#FFF;
+    font-size:3vmax;
+}
+#header .search{
+    width:70%;
+    background: var(--gradientCeleste);
+    margin-left:15%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding:1vmax 2vmax;
+}
+#header .search h2{
+    color:#FFF;
+    font-size:2vmax;
+}
+#header .search form{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:1vmax 0;
+}
+#header .search form input[type=text]{
+    width:80%;
+    border:none;
+}
+#header .search form input[type=submit]{
+    width:15%;
+}
+#header .search form .help{
+    width:100%;
+    color:#FFF;
+    margin-top:0.3vmax;
+    font-size:0.7vmax;
+}
+
+/** ***** FOOTER ***** **/
+#footer{
+    background: rgba(0,0,0);
+    background: var(--gradientNegroBottom);
+    padding:1vmax;
+    margin-top:1vmax;
+}

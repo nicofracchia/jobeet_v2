@@ -6014,3 +6014,61 @@ May 04 19:13:17 symfony [info] {sfWebDebugLogger} Action "job/index" 5.42 ms (1)
 May 04 19:13:17 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 13.00 ms (1)
 May 04 19:13:17 symfony [info] {sfWebDebugLogger} Partial "job/_list" 7.44 ms (1)
 May 04 19:13:17 symfony [info] {sfWebResponse} Send content (41188 o)
+May 04 20:52:14 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/new with parameters array (  'module' => 'job',  'action' => 'new',)
+May 04 20:52:14 symfony [info] {myUser} Automatic user logout due to timeout
+May 04 20:52:14 symfony [info] {myUser} User is not authenticated
+May 04 20:52:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 20:52:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 04 20:52:14 symfony [info] {jobActions} Call "jobActions->executeNew()"
+May 04 20:52:15 symfony [info] {sfPHPView} Render "/var/www/html/apps/frontend/modules/job/templates/newSuccess.php"
+May 04 20:52:15 symfony [info] {sfPartialView} Render "/var/www/html/apps/frontend/modules/job/templates/_form.php"
+May 04 20:52:15 symfony [err] {sfConfigurationException} The route "job_create" does not exist.
+May 04 20:52:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+May 04 20:52:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 20:52:15 symfony [info] {sfWebDebugLogger} Configuration 20.93 ms (10)
+May 04 20:52:15 symfony [info] {sfWebDebugLogger} Factories 2.84 ms (1)
+May 04 20:52:15 symfony [info] {sfWebDebugLogger} Action "job/new" 14.10 ms (1)
+May 04 20:52:15 symfony [info] {sfWebDebugLogger} View "Success" for "job/new" 25.94 ms (1)
+May 04 20:52:15 symfony [info] {sfWebDebugLogger} Partial "job/_form" 24.72 ms (1)
+May 04 21:36:26 symfony [info] {sfPatternRouting} Match route "job_new" (/job/new.:sf_format) for /job/new with parameters array (  'module' => 'job',  'action' => 'new',  'sf_format' => 'html',)
+May 04 21:36:26 symfony [info] {myUser} Automatic user logout due to timeout
+May 04 21:36:26 symfony [info] {myUser} User is not authenticated
+May 04 21:36:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:36:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 04 21:36:26 symfony [info] {jobActions} Call "jobActions->executeNew()"
+May 04 21:36:27 symfony [info] {sfPHPView} Render "/var/www/html/apps/frontend/modules/job/templates/newSuccess.php"
+May 04 21:36:27 symfony [info] {sfPartialView} Render "/var/www/html/apps/frontend/modules/job/templates/_form.php"
+May 04 21:36:27 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 04 21:36:27 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SELECT jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`
+May 04 21:36:27 symfony [info] {sfPHPView} Decorate content with "/var/www/html/apps/frontend/templates/layout.php"
+May 04 21:36:27 symfony [info] {sfPHPView} Render "/var/www/html/apps/frontend/templates/layout.php"
+May 04 21:36:27 symfony [info] {main} Get slot "title"
+May 04 21:36:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 21:36:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 21:36:27 symfony [info] {sfWebDebugLogger} Configuration 23.27 ms (10)
+May 04 21:36:27 symfony [info] {sfWebDebugLogger} Factories 26.84 ms (1)
+May 04 21:36:27 symfony [info] {sfWebDebugLogger} Action "job/new" 4.85 ms (1)
+May 04 21:36:27 symfony [info] {sfWebDebugLogger} View "Success" for "job/new" 12.34 ms (1)
+May 04 21:36:27 symfony [info] {sfWebDebugLogger} Partial "job/_form" 9.39 ms (1)
+May 04 21:36:27 symfony [info] {sfWebResponse} Send content (43732 o)
+May 04 21:36:43 symfony [info] {sfPatternRouting} Match route "job_create" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'create',  'sf_format' => 'html',)
+May 04 21:36:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:36:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 04 21:36:43 symfony [info] {jobActions} Call "jobActions->executeCreate()"
+May 04 21:36:43 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.0 MB | mempeak:    3.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 04 21:36:43 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.0 MB | mempeak:    3.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_category` WHERE jobeet_category.ID='1'
+May 04 21:36:43 symfony [info] {jobActions} Change template to "CURRENT/new"
+May 04 21:36:43 symfony [info] {sfPHPView} Render "/var/www/html/apps/frontend/modules/job/templates/newSuccess.php"
+May 04 21:36:43 symfony [info] {sfPartialView} Render "/var/www/html/apps/frontend/modules/job/templates/_form.php"
+May 04 21:36:43 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SELECT jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`
+May 04 21:36:43 symfony [info] {sfPHPView} Decorate content with "/var/www/html/apps/frontend/templates/layout.php"
+May 04 21:36:43 symfony [info] {sfPHPView} Render "/var/www/html/apps/frontend/templates/layout.php"
+May 04 21:36:43 symfony [info] {main} Get slot "title"
+May 04 21:36:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 21:36:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 21:36:43 symfony [info] {sfWebDebugLogger} Configuration 0.71 ms (9)
+May 04 21:36:43 symfony [info] {sfWebDebugLogger} Factories 3.66 ms (1)
+May 04 21:36:43 symfony [info] {sfWebDebugLogger} Action "job/create" 9.73 ms (1)
+May 04 21:36:43 symfony [info] {sfWebDebugLogger} View "Success" for "job/create" 7.29 ms (1)
+May 04 21:36:43 symfony [info] {sfWebDebugLogger} Partial "job/_form" 5.07 ms (1)
+May 04 21:36:43 symfony [info] {sfWebResponse} Send content (46697 o)

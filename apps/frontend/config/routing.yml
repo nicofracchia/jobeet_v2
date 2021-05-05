@@ -19,6 +19,14 @@ job_show_user:
     id: \d+
     sf_method: [GET]
 
+job:
+  class: sfPropelRouteCollection
+  options:
+    model: JobeetJob
+    column: token
+    object_actions: { publish: put }
+  requirements:
+    token: \w+
 
 
 # default rules

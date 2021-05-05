@@ -24,7 +24,11 @@ class JobeetCategoryPeer extends BaseJobeetCategoryPeer {
         $criteria->add(JobeetJobPeer::EXPIRES_AT, time(), Criteria::GREATER_THAN);
         $criteria->setDistinct();
 
-        return self::doSelect($criteria);
+        $criteria->add(JobeetJobPeer::IS_ACTIVATED, true);
+
+        return $criteria;
+
+        //return self::doSelect($criteria);
     }
 
 } // JobeetCategoryPeer

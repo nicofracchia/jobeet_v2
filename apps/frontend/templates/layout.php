@@ -21,7 +21,8 @@
             <div id="sub_header">
                 <div class="post">
                     <div>
-                        <a href="<?php echo url_for('@default?module=job&action=new'); ?>" class="boton botonCeleste">Post a Job >></a>
+                        <!-- <a href="<?php echo url_for('@default?module=job&action=new'); ?>" class="boton botonCeleste">Post a Job >></a> -->
+                        <a href="<?php echo url_for('@job_new') ?>">Post a Job</a>
                     </div>
                 </div>
             </div>

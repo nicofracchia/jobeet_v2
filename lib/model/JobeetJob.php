@@ -34,6 +34,19 @@ class JobeetJob extends BaseJobeetJob {
         return sprintf('%s at %s (%s)', $this->getPosition(), $this->getCompany(), $this->getLocation());
     }
 
+    public function extend($force = false)
+    {
+        if (!$force && !$this->expiresSoon())
+        {
+            return false;
+        }
+
+        $this->setExpiresAt(time() + 86400 * sfConfig::get('app_active_days'));
+        $this->save();
+
+        return true;
+    }
+
     public function getCompanySlug()
     {
         return Jobeet::slugify($this->getCompany());
